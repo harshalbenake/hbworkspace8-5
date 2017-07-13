@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.harshalbenake.odometer.views.Odometer
+        android:id="@+id/odometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:np_centerColor="@android:color/holo_green_dark"
+        app:np_edgeColor="@android:color/white"
+        app:np_font="@string/lato_regular"
+      android:layout_centerInParent="true"
+        app:np_reading="0000"
+        app:np_slots="4"
+        app:np_textColor="@color/white"
+        app:np_textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvOutPut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/odometer"
+       android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/black"
+        android:layout_below="@id/tvOutPut"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>
+
